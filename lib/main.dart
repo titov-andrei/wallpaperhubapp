@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:wallpaperhubapp/views/home.dart';
 
 void main() {
   runApp(MyApp());
@@ -13,7 +14,7 @@ class MyApp extends StatelessWidget {
         primaryColor: Colors.white,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: MyHomePage(),
+      home: Home(),
     );
   }
 }
