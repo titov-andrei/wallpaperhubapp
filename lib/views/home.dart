@@ -10,9 +10,18 @@ class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: BrandName(),
-      ),
-    );
+        appBar: AppBar(
+          title: BrandName(),
+          elevation: 0.0,
+        ),
+        body: Container(
+          child: Column(
+            children: <Widget>[
+              Row(children: <Widget>[
+                TextField()
+              ],)
+            ],
+          ),
+        ));
   }
 }
