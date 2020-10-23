@@ -50,16 +50,19 @@ class _HomeState extends State<Home> {
               SizedBox(
                 height: 16,
               ),
-              ListView.builder(
-                  itemCount: categories.length,
-                    shrinkWrap: true,
-                    scrollDirection: ,
-                  itemBuilder: (context, index) {
-                    return CategoriesTile(
-                      title: categories[index].categorieName,
-                      imgUrl: categories[index].imgUrl,
-                    );
-                  })
+              Container(
+                height: 80,
+                child: ListView.builder(
+                    itemCount: categories.length,
+                      shrinkWrap: true,
+                      scrollDirection: Axis.horizontal,
+                    itemBuilder: (context, index) {
+                      return CategoriesTile(
+                        title: categories[index].categorieName,
+                        imgUrl: categories[index].imgUrl,
+                      );
+                    }),
+              )
             ],
           ),
         ));
