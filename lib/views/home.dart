@@ -37,9 +37,19 @@ class _HomeState extends State<Home> {
                     Icon(Icons.search)
                   ],
                 ),
-              )
+              ),
+              SizedBox(height: 16,),
             ],
           ),
         ));
+  }
+}
+
+class CategoriesTile extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      
+    );
   }
 }
