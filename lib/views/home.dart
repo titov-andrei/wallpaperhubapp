@@ -29,16 +29,17 @@ class _HomeState extends State<Home> {
                     Expanded(
                       child: TextField(
                         decoration: InputDecoration(
-                          hintText: "search wallpaper",
-                          border: InputBorder.none
-                        ),
+                            hintText: "search wallpaper",
+                            border: InputBorder.none),
                       ),
                     ),
                     Icon(Icons.search)
                   ],
                 ),
               ),
-              SizedBox(height: 16,),
+              SizedBox(
+                height: 16,
+              ),
             ],
           ),
         ));
@@ -46,10 +47,17 @@ class _HomeState extends State<Home> {
 }
 
 class CategoriesTile extends StatelessWidget {
+  String imgUrl;
   @override
   Widget build(BuildContext context) {
     return Container(
-      
+      child: Stack(
+        children: <Widget>[
+          Container(
+            child: Image.network(imgUrl),
+          )
+        ],
+      ),
     );
   }
 }
