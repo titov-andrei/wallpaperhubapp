@@ -50,6 +50,16 @@ class _HomeState extends State<Home> {
               SizedBox(
                 height: 16,
               ),
+              ListView.builder(
+                  itemCount: categories.length,
+                    shrinkWrap: true,
+                    scrollDirection: ,
+                  itemBuilder: (context, index) {
+                    return CategoriesTile(
+                      title: categories[index].categorieName,
+                      imgUrl: categories[index].imgUrl,
+                    );
+                  })
             ],
           ),
         ));
@@ -58,7 +68,7 @@ class _HomeState extends State<Home> {
 
 class CategoriesTile extends StatelessWidget {
   final String imgUrl, title;
-  CategoriesTile({this.title, this.imgUrl});
+  CategoriesTile({@required this.title, @required this.imgUrl});
   @override
   Widget build(BuildContext context) {
     return Container(
