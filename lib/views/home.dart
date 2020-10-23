@@ -18,6 +18,9 @@ class _HomeState extends State<Home> {
           child: Column(
             children: <Widget>[
               Container(
+                decoration: BoxDecoration(
+                  color: Color(0xfff5f8fd)
+                ),
                 margin: EdgeInsets.symmetric(horizontal: 24),
                 child: Row(children: <Widget>[
                   Expanded(
