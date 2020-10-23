@@ -47,7 +47,7 @@ class _HomeState extends State<Home> {
 }
 
 class CategoriesTile extends StatelessWidget {
-  String imgUrl;
+  String imgUrl, title;
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -55,7 +55,8 @@ class CategoriesTile extends StatelessWidget {
         children: <Widget>[
           Container(
             child: Image.network(imgUrl),
-          )
+          ),
+          Container(child: Text(title),)
         ],
       ),
     );
