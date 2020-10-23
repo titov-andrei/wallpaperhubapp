@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:wallpaperhubapp/data/data.dart';
+import 'package:wallpaperhubapp/model/categories_model.dart';
 import 'package:wallpaperhubapp/widgets/widget.dart';
 
 class Home extends StatefulWidget {
@@ -7,6 +9,14 @@ class Home extends StatefulWidget {
 }
 
 class _HomeState extends State<Home> {
+  List<CategoriesModel> categories = new List();
+
+  @override
+  void initState() {
+    categories = getCategories();
+    super.initState();
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
