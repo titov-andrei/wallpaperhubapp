@@ -18,7 +18,14 @@ class _HomeState extends State<Home> {
           child: Column(
             children: <Widget>[
               Row(children: <Widget>[
-                TextField()
+                Expanded(
+                child: TextField(
+                  decoration: InputDecoration(
+                    hintText: "search"
+                  ),
+                ),
+                ),
+                Icon(Icons.search)
               ],)
             ],
           ),
