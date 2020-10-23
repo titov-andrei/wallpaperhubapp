@@ -18,6 +18,7 @@ class _HomeState extends State<Home> {
           child: Column(
             children: <Widget>[
               Container(
+                margin: EdgeInsets.symmetric(horizontal: 24),
                 child: Row(children: <Widget>[
                   Expanded(
                   child: TextField(
