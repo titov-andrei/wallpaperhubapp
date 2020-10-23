@@ -19,7 +19,10 @@ class _HomeState extends State<Home> {
           child: Column(
             children: <Widget>[
               Container(
-                decoration: BoxDecoration(color: Color(0xfff5f8fd)),
+                decoration: BoxDecoration(
+                  color: Color(0xfff5f8fd),
+                  borderRadius: BorderRadius.circular(16)
+                ),
                 padding: EdgeInsets.symmetric(horizontal: 24),
                 margin: EdgeInsets.symmetric(horizontal: 24),
                 child: Row(
