@@ -17,16 +17,18 @@ class _HomeState extends State<Home> {
         body: Container(
           child: Column(
             children: <Widget>[
-              Row(children: <Widget>[
-                Expanded(
-                child: TextField(
-                  decoration: InputDecoration(
-                    hintText: "search"
+              Container(
+                child: Row(children: <Widget>[
+                  Expanded(
+                  child: TextField(
+                    decoration: InputDecoration(
+                      hintText: "search"
+                    ),
                   ),
-                ),
-                ),
-                Icon(Icons.search)
-              ],)
+                  ),
+                  Icon(Icons.search)
+                ],),
+              )
             ],
           ),
         ));
