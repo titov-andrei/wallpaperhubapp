@@ -53,9 +53,10 @@ class _HomeState extends State<Home> {
               Container(
                 height: 80,
                 child: ListView.builder(
+                    padding: EdgeInsets.symmetric(horizontal: 24),
                     itemCount: categories.length,
-                      shrinkWrap: true,
-                      scrollDirection: Axis.horizontal,
+                    shrinkWrap: true,
+                    scrollDirection: Axis.horizontal,
                     itemBuilder: (context, index) {
                       return CategoriesTile(
                         title: categories[index].categorieName,
@@ -70,14 +71,17 @@ class _HomeState extends State<Home> {
 }
 
 class CategoriesTile extends StatelessWidget {
+
   final String imgUrl, title;
   CategoriesTile({@required this.title, @required this.imgUrl});
+
   @override
   Widget build(BuildContext context) {
     return Container(
       child: Stack(
         children: <Widget>[
-          Container(
+          ClipRRect(
+            borderRadius: BorderRadius.circular(16),
             child: Image.network(imgUrl),
           ),
           Container(
