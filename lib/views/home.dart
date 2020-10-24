@@ -1,3 +1,5 @@
+import 'dart:convert';
+
 import 'package:flutter/material.dart';
 import 'package:wallpaperhubapp/data/data.dart';
 import 'package:wallpaperhubapp/model/categories_model.dart';
@@ -16,7 +18,11 @@ class _HomeState extends State<Home> {
     var response = await http.get(
         "https://api.pexels.com/v1/curated?per_page=15&page=1",
         headers: {"Authorization": apiKey});
-    print(response.body.toString());
+    // print(response.body.toString());
+    Map<String, dynamic> jsonData = jsonDecode(response.body);
+    jsonData["photos"].forEach((element) {
+      print(element);
+    });
   }
 
   @override
