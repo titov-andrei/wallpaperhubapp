@@ -78,7 +78,7 @@ class CategoriesTile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.symmetric(horizontal: 4),
+      margin: EdgeInsets.only(right: 4),
       child: Stack(
         children: <Widget>[
           ClipRRect(
@@ -86,6 +86,7 @@ class CategoriesTile extends StatelessWidget {
             child: Image.network(imgUrl, height: 50, width: 100, fit: BoxFit.cover, ),
           ),
           Container(
+            alignment: Alignment.center,
             child: Text(title),
           )
         ],
