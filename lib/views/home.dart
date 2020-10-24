@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:wallpaperhubapp/data/data.dart';
 import 'package:wallpaperhubapp/model/categories_model.dart';
 import 'package:wallpaperhubapp/widgets/widget.dart';
+import 'package:http/http.dart' as http;
 
 class Home extends StatefulWidget {
   @override
@@ -10,6 +11,8 @@ class Home extends StatefulWidget {
 
 class _HomeState extends State<Home> {
   List<CategoriesModel> categories = new List();
+
+  getTrendingWallpapers() {}
 
   @override
   void initState() {
@@ -94,7 +97,13 @@ class CategoriesTile extends StatelessWidget {
             height: 50,
             width: 100,
             alignment: Alignment.center,
-            child: Text(title, style: TextStyle(color: Colors.white, fontWeight: FontWeight.w500, fontSize: 15),),
+            child: Text(
+              title,
+              style: TextStyle(
+                  color: Colors.white,
+                  fontWeight: FontWeight.w500,
+                  fontSize: 15),
+            ),
           )
         ],
       ),
