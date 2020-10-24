@@ -12,7 +12,14 @@ class Home extends StatefulWidget {
 class _HomeState extends State<Home> {
   List<CategoriesModel> categories = new List();
 
-  getTrendingWallpapers() {}
+  getTrendingWallpapers() {
+    var response = http.get(
+      "https://api.pexels.com/v1/curated?per_page=15&page=1",
+      headers: {
+        "Authorization" : apiKey
+      }
+    );
+  }
 
   @override
   void initState() {
