@@ -90,10 +90,11 @@ class CategoriesTile extends StatelessWidget {
             ),
           ),
           Container(
+            color: Colors.black26,
             height: 50,
             width: 100,
             alignment: Alignment.center,
-            child: Text(title),
+            child: Text(title, style: TextStyle(color: Colors.white, fontWeight: FontWeight.w500, fontSize: 15),),
           )
         ],
       ),
