@@ -71,7 +71,6 @@ class _HomeState extends State<Home> {
 }
 
 class CategoriesTile extends StatelessWidget {
-
   final String imgUrl, title;
   CategoriesTile({@required this.title, @required this.imgUrl});
 
@@ -83,9 +82,16 @@ class CategoriesTile extends StatelessWidget {
         children: <Widget>[
           ClipRRect(
             borderRadius: BorderRadius.circular(8),
-            child: Image.network(imgUrl, height: 50, width: 100, fit: BoxFit.cover, ),
+            child: Image.network(
+              imgUrl,
+              height: 50,
+              width: 100,
+              fit: BoxFit.cover,
+            ),
           ),
           Container(
+            height: 50,
+            width: 100,
             alignment: Alignment.center,
             child: Text(title),
           )
