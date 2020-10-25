@@ -88,7 +88,9 @@ class _HomeState extends State<Home> {
                         imgUrl: categories[index].imgUrl,
                       );
                     }),
-              )
+              ),
+              SizedBox(height: 16,),
+              wallpapersList(wallpapers: wallpapers, context: context)
             ],
           ),
         ));
