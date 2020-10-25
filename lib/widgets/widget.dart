@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:wallpaperhubapp/model/wallpaper_model.dart';
 
 Widget brandName() {
   return Row(
