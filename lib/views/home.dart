@@ -25,7 +25,7 @@ class _HomeState extends State<Home> {
     jsonData["photos"].forEach((element) {
       // print(element);
       WallpaperModel wallpaperModel = new WallpaperModel();
-      wallpaperModel = jsonData["src"]
+      wallpaperModel = WallpaperModel.fromMap(element);
     });
   }
 
