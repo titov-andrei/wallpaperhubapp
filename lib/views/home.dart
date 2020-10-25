@@ -23,7 +23,9 @@ class _HomeState extends State<Home> {
     // print(response.body.toString());
     Map<String, dynamic> jsonData = jsonDecode(response.body);
     jsonData["photos"].forEach((element) {
-      print(element);
+      // print(element);
+      WallpaperModel wallpaperModel = new WallpaperModel();
+      wallpaperModel = jsonData["id"]
     });
   }
 
