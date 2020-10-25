@@ -3,6 +3,7 @@ import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:wallpaperhubapp/data/data.dart';
 import 'package:wallpaperhubapp/model/categories_model.dart';
+import 'package:wallpaperhubapp/model/wallpaper_model.dart';
 import 'package:wallpaperhubapp/widgets/widget.dart';
 import 'package:http/http.dart' as http;
 
@@ -13,6 +14,7 @@ class Home extends StatefulWidget {
 
 class _HomeState extends State<Home> {
   List<CategoriesModel> categories = new List();
+  List<WallpaperModel> wallpapers = new List();
 
   getTrendingWallpapers() async {
     var response = await http.get(
