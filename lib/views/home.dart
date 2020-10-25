@@ -26,7 +26,13 @@ class _HomeState extends State<Home> {
       // print(element);
       WallpaperModel wallpaperModel = new WallpaperModel();
       wallpaperModel = WallpaperModel.fromMap(element);
+      wallpapers.add(wallpaperModel);
     });
+
+    setState(() {
+      
+    });
+
   }
 
   @override
