@@ -9,6 +9,10 @@ class WallpaperModel {
       this.photographer_url,
       this.photographer_id,
       this.photographer});
+
+  factory WallpaperModel.fromMap(Map<String, dynamic> jsonData) {
+    return WallpaperModel();
+  }
 }
 
 class SrcModel {
