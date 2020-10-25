@@ -9,3 +9,9 @@ Widget brandName() {
     ],
   );
 }
+
+Widget WallpapersList(List<WallpaperModel> wallpapers){
+  return Container(
+    child: GridView.count(crossAxisCount: null),
+  )
+}
