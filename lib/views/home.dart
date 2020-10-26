@@ -87,9 +87,6 @@ class _HomeState extends State<Home> {
                         );
                       }),
                 ),
-                SizedBox(
-                  height: 16,
-                ),
                 wallpapersList(wallpapers: wallpapers, context: context)
               ],
             ),
