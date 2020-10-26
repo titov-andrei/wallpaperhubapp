@@ -29,10 +29,7 @@ class _HomeState extends State<Home> {
       wallpapers.add(wallpaperModel);
     });
 
-    setState(() {
-      
-    });
-
+    setState(() {});
   }
 
   @override
@@ -89,7 +86,9 @@ class _HomeState extends State<Home> {
                       );
                     }),
               ),
-              SizedBox(height: 16,),
+              SizedBox(
+                height: 16,
+              ),
               wallpapersList(wallpapers: wallpapers, context: context)
             ],
           ),
@@ -118,6 +117,8 @@ class CategoriesTile extends StatelessWidget {
           ),
           Container(
             color: Colors.black26,
+            decoration: BoxDecoration(borderRadius: BorderRadius.circular(8)
+            ),
             height: 50,
             width: 100,
             alignment: Alignment.center,
