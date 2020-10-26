@@ -30,6 +30,7 @@ Widget wallpapersList({List<WallpaperModel> wallpapers, context}) {
       children: wallpapers.map((wallpaper) {
         return GridTile(
           child: Container(
+            color: Colors.blue,
             child: Image.network(wallpaper.src.portrait),
           ),
         );
