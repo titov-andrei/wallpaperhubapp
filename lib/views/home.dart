@@ -66,7 +66,13 @@ class _HomeState extends State<Home> {
                               border: InputBorder.none),
                         ),
                       ),
-                      Icon(Icons.search)
+                      InkWell(
+                        onTap: (){
+                          Navigator.push(context, MaterialPageRoute(
+                            builder: (context) => Search))
+                        },
+                        child: Container(child: Icon(Icons.search)),
+                      )
                     ],
                   ),
                 ),
